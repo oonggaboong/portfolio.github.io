@@ -226,11 +226,11 @@ table {
 }
 
 table th{
-  padding:10px;
+  padding:15px;
 }
 
 table td{
-  padding:10px;
+  padding:15px;
 }
 
 caption {
@@ -1465,9 +1465,11 @@ button {
   vertical-align: bottom;
 }
 
+/* 
 .table-group-divider {
   border-top: calc(2 * $table-border-width) solid currentcolor;
-}
+} 
+*/
 
 .caption-top {
   caption-side: top;
@@ -3690,7 +3692,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .navbar-expand-xxl {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -3865,6 +3867,13 @@ fieldset:disabled .btn {
   white-space: nowrap;
   background-color: var(--bs-progress-bar-bg);
   transition: var(--bs-progress-bar-transition);
+}
+
+@media screen and (min-width: 800px) {
+  .progress-bar {
+     width: 1000px;
+     overflow: hidden;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -8035,6 +8044,12 @@ a.text-link:hover {
   color: #434e5e;
 }
 
+.resume-skill-level {
+  font-size: 0.7rem;
+  color: #888f99;
+  text-align: right;
+}
+
 .resume-degree {
   color: #434e5e;
 }
@@ -8076,16 +8091,72 @@ a.text-link:hover {
 }
 
 
-/* for fade in animation */
+/* center class */
 
-.fade-in{
+.center-1{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.center-2{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  max-width: 400px;
+}
+
+
+/* normalize table*/
+
+.normalize{
+  max-width: 700px;
+  min-width: 300px;
+}
+
+
+/* .fade and .active for fade-in and fade-out*/
+
+.fading{ 
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transform: scale(0.1);
+  transition: all 0.5s ease-in-out;
 }
 
-.fade-in.appear{
+.fading-1{ 
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.fading-2{ 
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.fading-3{ 
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.fading-4{ 
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.active{
   opacity: 1;
+  transform: scale(1);
 }
 
 
+/* giving border */
 
+.bordercolor{
+  border-color: rgb(255, 0, 0);
+  border-style: solid;
+}
