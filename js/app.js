@@ -1,27 +1,54 @@
-// for fade-in
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('.fading');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1;
+  if(contentPosition < screenPosition){
+    content.classList.add('active');
+  }else{
+    content.classList.remove('active');
+  }
+})
 
-const faders = document.querySelectorAll(".fade-in");
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('.fading-1');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1;
+  if(contentPosition < screenPosition){
+    content.classList.add('active');
+  }else{
+    content.classList.remove('active');
+  }
+})
 
-const appearOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px 0px 0px"
-};
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('.fading-2');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1;
+  if(contentPosition < screenPosition){
+    content.classList.add('active');
+  }else{
+    content.classList.remove('active');
+  }
+})
 
-const appearOnScroll = new IntersectionObserver(function (
-  entries,
-  appearOnScroll
-) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add("appear");
-      appearOnScroll.unobserve(entry.target);
-    }
-  });
-},
-appearOptions);
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('.fading-3');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1;
+  if(contentPosition < screenPosition){
+    content.classList.add('active');
+  }else{
+    content.classList.remove('active');
+  }
+})
 
-faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
-});
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('.fading-4');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1;
+  if(contentPosition < screenPosition){
+    content.classList.add('active');
+  }else{
+    content.classList.remove('active');
+  }
+})
