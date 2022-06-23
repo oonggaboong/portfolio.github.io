@@ -1,3 +1,5 @@
+// for fading effect
+
 window.addEventListener('scroll',()=>{
   let content = document.querySelector('.fading');
   let contentPosition = content.getBoundingClientRect().top;
@@ -12,7 +14,7 @@ window.addEventListener('scroll',()=>{
 window.addEventListener('scroll',()=>{
   let content = document.querySelector('.fading-1');
   let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight/1;
+  let screenPosition = window.innerHeight/0.7;
   if(contentPosition < screenPosition){
     content.classList.add('active');
   }else{
