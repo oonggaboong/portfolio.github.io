@@ -8160,3 +8160,9 @@ a.text-link:hover {
   border-color: rgb(255, 0, 0);
   border-style: solid;
 }
+
+/* max width */
+
+.maxwidth{
+  max-width: 800px;
+}
